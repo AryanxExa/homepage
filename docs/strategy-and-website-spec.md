@@ -176,7 +176,7 @@ The palette is built on a distinctive, ownable idea: **cool engineered graphite 
 *Foundation (neutrals — do 90% of the work):*
 - Ink `#0B0C0E` (near-black, primary dark surface / "the forge")
 - Graphite `#16181D` (elevated dark surface)
-- Steel `#3A3F47` (dark-mode borders, secondary text on dark)
+- Steel `#3A3F47` (dark-band borders & dividers only — fails text contrast; secondary text on dark uses `#A9AFB8`, see design system §2)
 - Slate `#5B626C` (muted text)
 - Mist `#E7E8EA` (light borders / dividers)
 - Off-white `#FAFAF8` (primary light canvas — warm, not clinical)
