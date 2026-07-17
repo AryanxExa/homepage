@@ -9,6 +9,7 @@ YanForge engineers intelligent growth systems for UAE service businesses — sal
 The home of the YanForge brand and marketing website.
 
 - **[Product Strategy & Website Specification](docs/strategy-and-website-spec.md)** — the source of truth for brand, positioning, UX, visual identity, motion, page-by-page spec, conversion strategy, and technical architecture.
+- **[Information Architecture & UX Architecture](docs/information-architecture.md)** — every page and section, navigation (desktop + mobile), user flows, conversion funnels, internal linking, CTA hierarchy, footer structure, and phase gates. Governs structure; the strategy spec governs brand and visual direction.
 
 ## Status
 

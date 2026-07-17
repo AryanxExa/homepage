@@ -262,6 +262,8 @@ Motion is where we earn the "craft camp" 30% — and where we prove, viscerally,
 
 ## 10. Information architecture & sitemap
 
+> **Deep IA:** the complete UX architecture — every page, every section, navigation, user flows, funnels, internal linking, CTA hierarchy, footer and mobile nav — lives in [`information-architecture.md`](information-architecture.md). This section remains the summary; where the two disagree on structure, the IA document governs.
+
 ```
 /                      Home
 /system                The System — the connected growth OS (how it fits together)
@@ -276,7 +278,7 @@ Motion is where we earn the "craft camp" 30% — and where we prove, viscerally,
 /pricing               Engagement & investment
 /about                 The team / founder / why we exist
 /insights              (Phase 2) Playbooks & guides — SEO + authority
-/contact               Book a Growth Audit (primary conversion hub)
+/growth-audit          Book a Growth Audit (primary conversion hub; /contact 301s here — IA doc §1.1)
 /legal/*               Privacy, terms
 [AR] Arabic mirror     (Phase 2, RTL)
 ```
@@ -386,7 +388,7 @@ Frame each around outcomes and ROI; **publish honest "from AED X,XXX/month" anch
 
 **12.6 About (`/about`).** Founder story, why YanForge exists, the UAE-native thesis, real faces, values, and how we work with clients (partnership, not vendor). The single biggest lever for the "are they legit" objection.
 
-**12.7 Contact / Book a Growth Audit (`/contact`).** The conversion hub — see §13. Calendar embed + WhatsApp-first option + short form. Reassurance copy explaining what the audit is and isn't.
+**12.7 Book a Growth Audit (`/growth-audit`; `/contact` redirects — IA doc §5.8).** The conversion hub — see §13. Calendar embed + WhatsApp-first option + short form. Reassurance copy explaining what the audit is and isn't.
 
 ---
 
