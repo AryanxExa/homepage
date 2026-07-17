@@ -10,6 +10,7 @@ The home of the YanForge brand and marketing website.
 
 - **[Product Strategy & Website Specification](docs/strategy-and-website-spec.md)** — the source of truth for brand, positioning, UX, visual identity, motion, page-by-page spec, conversion strategy, and technical architecture.
 - **[Information Architecture & UX Architecture](docs/information-architecture.md)** — every page and section, navigation (desktop + mobile), user flows, conversion funnels, internal linking, CTA hierarchy, footer structure, and phase gates. Governs structure; the strategy spec governs brand and visual direction.
+- **[Homepage Copy Deck](docs/copy/homepage.md)** — production copy for every homepage section, string-by-string, with the psychological mechanism annotated per section. Canonical source for copy; placeholders marked pending founder inputs (spec §19).
 
 ## Status
 
