@@ -14,6 +14,7 @@ The home of the YanForge brand and marketing website.
 - **[Design System — "Forge"](docs/design-system.md)** — tokens (color, type, spacing, radius, elevation, motion), every component with anatomy/variants/states, dark-band theming, glassmorphism and animation rules, responsive and accessibility standards, and governance. Governs visual & interactive definition.
 - **[Page Design Specifications](docs/page-designs.md)** — composition layer: every page laid out on the grid (desktop → tablet → mobile), the seven global layout systems (spacing grammar, hierarchy, typography-in-layout, color deployment, imagery classes, layout DNA, visual rhythm), transformation rules per breakpoint, and a pre-ship walkthrough test.
 - **[Motion Design Bible](docs/motion-design.md)** — the complete motion catalog and rulings: purpose doctrine, stack rulings (Framer Motion primary, Lenis desktop-only, GSAP not admitted), physics language (durations, easings, named springs), hero load timeline, every interaction specified with trigger/values/reduced-motion fallback, performance contract and degradation ladder, motion QA.
+- **[Micro-Interactions — the Response Layer](docs/micro-interactions.md)** — the sub-perceptual detail beneath the Motion Bible: ≤50ms acknowledgment rule, direct-manipulation gesture physics, interruptibility, validation timing, success morphs, hysteresis thresholds, and the on-device "feel pass" QA.
 
 ## Status
 
