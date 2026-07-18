@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Forge DS tokens (design-system.md §2–§7) — the single source of truth. */
+@theme {
+  --color-ink: #0b0c0e;
+  --color-graphite: #16181d;
+  --color-steel: #3a3f47;
+  --color-slate: #5b626c;
+  --color-mist: #e7e8ea;
+  --color-canvas: #fafaf8;
+  --color-invsec: #a9afb8; /* inverse-secondary: text on dark (8.6:1) */
+  --color-ember: #ff6a2b;
+  --color-gold: #ffb020;
+  --color-copper: #c7621e; /* decorative only */
+  --color-copperdeep: #a8500f; /* text links / focus on light (5.3:1) */
+  --color-teal: #2bd4c4; /* dark bands only */
+  --color-whatsapp: #1daa61;
+
+  --font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", monospace;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+
+  --shadow-e1: 0 2px 8px rgb(11 12 14 / 0.06);
+  --shadow-e2: 0 8px 24px rgb(11 12 14 / 0.08);
+  --shadow-e3: 0 16px 48px rgb(11 12 14 / 0.10);
+
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-interact: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  @apply bg-canvas font-sans text-ink antialiased;
+  font-size: 17px; /* DS §1 reading floor */
+  line-height: 1.6;
+}
+
+::selection { background: rgb(255 106 43 / 0.25); }
+
+/* Focus ring — DS §8.1: copper-deep, 2px, offset, both themes. Instant in, per MI. */
+:focus-visible {
+  outline: 2px solid var(--color-copperdeep);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+[data-band="engine"] :focus-visible { outline-color: var(--color-gold); }
+
+/* Molten gradient (135°, ember→gold). Ink label only (DS §2.6). */
+.bg-molten {
+  background-image: linear-gradient(135deg, var(--color-ember), var(--color-gold));
+  background-size: 130% 130%;
+  background-position: 0% 50%;
+  transition: background-position 120ms var(--ease-interact), transform 120ms var(--ease-interact);
+}
+.bg-molten:hover { background-position: 60% 50%; transform: translateY(-2px); }
+.bg-molten:active { background-position: 20% 50%; transform: translateY(0) scale(0.98); }
+@media (prefers-reduced-motion: reduce) {
+  .bg-molten:hover, .bg-molten:active { transform: none; }
+}
+
+/* Mono overline (DS §1) */
+.overline {
+  @apply font-mono uppercase;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+/* Hairlines per theme */
+.hairline { border-color: var(--color-mist); }
+[data-band="engine"] .hairline { border-color: var(--color-steel); }
+
+/* P2 text link: copper-deep, underline draws on hover (MI §2.11) */
+.textlink {
+  color: var(--color-copperdeep);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size 120ms var(--ease-interact);
+}
+.textlink:hover { background-size: 100% 1px; }
+[data-band="engine"] .textlink { color: var(--color-gold); }
+
+/* Edge-fade for horizontally scrollable rows (DS §8.10 / MI §2.12) */
+.edge-fade {
+  mask-image: linear-gradient(to right, transparent, black 16px, black calc(100% - 16px), transparent);
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
