@@ -12,6 +12,7 @@ The home of the YanForge brand and marketing website.
 - **[Information Architecture & UX Architecture](docs/information-architecture.md)** — every page and section, navigation (desktop + mobile), user flows, conversion funnels, internal linking, CTA hierarchy, footer structure, and phase gates. Governs structure; the strategy spec governs brand and visual direction.
 - **[Homepage Copy Deck](docs/copy/homepage.md)** — production copy for every homepage section, string-by-string, with the psychological mechanism annotated per section. Canonical source for copy; placeholders marked pending founder inputs (spec §19).
 - **[Design System — "Forge"](docs/design-system.md)** — tokens (color, type, spacing, radius, elevation, motion), every component with anatomy/variants/states, dark-band theming, glassmorphism and animation rules, responsive and accessibility standards, and governance. Governs visual & interactive definition.
+- **[Page Design Specifications](docs/page-designs.md)** — composition layer: every page laid out on the grid (desktop → tablet → mobile), the seven global layout systems (spacing grammar, hierarchy, typography-in-layout, color deployment, imagery classes, layout DNA, visual rhythm), transformation rules per breakpoint, and a pre-ship walkthrough test.
 
 ## Status
 
