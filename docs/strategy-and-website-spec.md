@@ -491,7 +491,7 @@ Convert     →  Growth Audit booked — via WhatsApp (primary rail on mobile)
 
 ## 17. Technical architecture (specification only — no code)
 
-- **Framework:** Next.js (App Router) + React + TypeScript — SSR/SSG for speed & SEO, ideal for the perf budget and per-industry pages.
+- **Framework:** ~~Next.js (App Router)~~ **superseded by EA v1.0:** React + Vite via **React Router v7 framework mode with full pre-rendering** — same static-HTML/SEO guarantees this section required, simpler operational model (static output + one form endpoint). See [`engineering-architecture.md`](engineering-architecture.md) §2.
 - **Styling & tokens:** utility CSS (Tailwind) *driven by the design tokens in §20* so brand = system, plus a small component library. Tokens are the single source of truth.
 - **Motion:** **one** motion library (Framer Motion) + native CSS/SVG animation. **No WebGL, no GSAP second stack, no runtime 3D (v1.1 — §21):** the top entry environment is Instagram's in-app WebView on mid-range Android, where heavy runtimes jank, heat and crash — and this audience converts on speed, not shaders.
 - **Content:** repo-based content (MDX/JSON) for Phase 1 — ~10 templated pages don't justify CMS auth/schema/hosting overhead. Adopt a headless CMS (e.g. Sanity) in Phase 2 when real case studies accrue and non-dev editing begins; the content model is CMS-shaped from day one so migration is mechanical.

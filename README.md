@@ -15,6 +15,7 @@ The home of the YanForge brand and marketing website.
 - **[Page Design Specifications](docs/page-designs.md)** — composition layer: every page laid out on the grid (desktop → tablet → mobile), the seven global layout systems (spacing grammar, hierarchy, typography-in-layout, color deployment, imagery classes, layout DNA, visual rhythm), transformation rules per breakpoint, and a pre-ship walkthrough test.
 - **[Motion Design Bible](docs/motion-design.md)** — the complete motion catalog and rulings: purpose doctrine, stack rulings (Framer Motion primary, Lenis desktop-only, GSAP not admitted), physics language (durations, easings, named springs), hero load timeline, every interaction specified with trigger/values/reduced-motion fallback, performance contract and degradation ladder, motion QA.
 - **[Micro-Interactions — the Response Layer](docs/micro-interactions.md)** — the sub-perceptual detail beneath the Motion Bible: ≤50ms acknowledgment rule, direct-manipulation gesture physics, interruptibility, validation timing, success morphs, hysteresis thresholds, and the on-device "feel pass" QA.
+- **[Engineering Architecture](docs/engineering-architecture.md)** — the build contract: stack rulings with admission scopes (React Router v7 framework mode on Vite, pre-rendered static routes), folder structure and import boundaries, component hierarchy, hooks and contexts, reusable patterns (content schemas, gates, CTA registry), naming, performance/SEO/accessibility enforcement, animation architecture, and CI quality gates.
 
 ## Status
 
