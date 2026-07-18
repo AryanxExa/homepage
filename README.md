@@ -21,8 +21,17 @@ The home of the YanForge brand and marketing website.
 
 ## Status
 
-Foundation stage. The strategy and specification are complete; the build has not started. See §18 (roadmap) and §19 (inputs needed) in the spec.
+**Built.** The full launch-scope site is implemented per the documentation stack: 13 pre-rendered static routes (React Router v7 framework mode on Vite, `ssr:false` + prerender), Tailwind v4 theme locked to the Forge tokens, Framer Motion behind a single import boundary with lazy-loaded features, and phase gates in `app/config/gates.ts`. Landing JS ≈ 134KB gz against the 150KB budget; typecheck clean.
+
+Pending founder inputs (spec §19) are typed nullable config in `app/config/site.ts` — WhatsApp number, address, pricing anchors, founder facts — with honest fallbacks rendered until they land.
 
 ## Getting started
 
-The website build is not scaffolded yet. When it begins, the recommended stack (per spec §17) is Next.js + React + TypeScript, styled from the design tokens in spec §20, deployed on Vercel.
+```
+npm install
+npm run dev        # local dev
+npm run build      # static output in build/client
+npm run typecheck  # strict TS
+```
+
+Deploy `build/client` to any static host; configure the `/contact → /growth-audit` 301 and headers at the host layer (performance spec §11).
